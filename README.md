@@ -11,6 +11,7 @@ o 𝑢(𝑡) = 𝐾𝑝𝑒(𝑡) + 𝐾𝑑
 𝑑𝑒(𝑡)
 
 𝑑𝑡
+
 - The problem at hand involves the design of a P D controller for a system with a given forward-path transfer function. The objective is to design a controller that satisfies certain specifications, including a specific value for the proportional gain (KP) and a 
 phase margin greater than 25°. The goal is to achieve stable and satisfactory system 
 performance by appropriately designing the controller. The following sections will 
