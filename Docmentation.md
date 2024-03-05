@@ -31,6 +31,11 @@ for this system.
 Design procedure
 Finding Kd
 • A PD controller can be represented as 
- C= Kp + Kd S ……. where Kp is the proportional constant and kd is the derivative#
+ C= Kp + Kd S ……. where Kp is the proportional constant and kd is the derivative constant
+  
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png) 
 
 
