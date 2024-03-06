@@ -40,8 +40,11 @@ for this system.
   
 
 ![![alt text](Images\image.png)](../Images/image.png)
+
 ![![alt text](Images\image-1.png)](../Images/image-1.png)
+
 ![![alt text](Images\image-2.png)](../Images/image-2\.png)
+
 ![![alt text](Images\image-3.png)](../Images/image-3.png)
 
 ## Or 
@@ -83,9 +86,13 @@ Kv = lim_{s \to 0} s* 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1) = 0
 The impulse, step and ramp response of the compensated and uncompensated closed loop 
 system is presented below using MATLAB.
 Impulse response without controller
+
 ![![alt text](Images\image-5.png)](../Images/image-5.png)
+
 ![![alt text](Images\image-6.png)](../Images/image-6.png)
+
 ![![alt text](Images\image-7.png)](../Images/image-7.png)
+
 ![![alt text](Images\image-8.png)](../Images/image-8.png)
 ## INTERPRETATION
 - From the impulse and step response of the compensated and uncompensated system we 
@@ -93,7 +100,9 @@ can conclude that:
 - the uncompensated system is critically damped.
 - the maximum overshot and the settling time are higher in the compensated system.
 - the maximum overshoot and the settling time can be seen as the tradeoff for higher gain margin.
+
 ![![alt text](Images\image-9.png)](../Images/image-9.png)
+
 ![![alt text](Images\image-10.png)](../Images/image-10.png)
 ## Bode Plot Representation
 - The Bode plot the corresponding margins can be drawn using the MATLAB function
@@ -102,8 +111,11 @@ Margin on the open loop transfer function of the system.
 Uncompensated system has a phase margin of -180 deg at 0 rad/s. this phase margin 
 implies that we have no margin to add, in fact a simple addition of any phase will 
 make the system unstable.
+
 ![![alt text](Images\image-11.png)](../Images/image-11.png)
+
 ![![alt text](Images\image-12.png)](../Images/image-12.png)
+
 ![![alt text](Images\image-13.png)](../Images/image-13.png)
 
 ## Conclusion
