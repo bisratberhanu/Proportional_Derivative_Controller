@@ -36,7 +36,7 @@ for this system.
 # Design procedure
 ## Finding Kd
 - A PD controller can be represented as 
- C= Kp + Kd S ……. where Kp is the proportional constant and kd is the derivative constant
+ C= 𝐾<sub>p</sub> + 𝐾<sub>d</sub>s ……. where Kp is the proportional constant and kd is the derivative constant
   
 
 ![![alt text](Images\image.png)](../Images/image.png)
@@ -48,19 +48,18 @@ for this system.
 ![![alt text](Images\image-3.png)](../Images/image-3.png)
 
 ## Or 
-• Using the MATLAB built-in tool pidtool, a PID controller can be simulated to fulfil a 
+- Using the MATLAB built-in tool pidtool, a PID controller can be simulated to fulfil a 
 corresponding criterion. In this case a phase margin of 25 degree and KP fixed at 9.
-• After a couple of iterations, the following parameters were obtained for the 
-controller and the system.
-o Kp=9.007 Kd= 1.88 which is almost exactly the same as the calculation
-o Gain margin= 13.3 dB and phase margin= 25 deg
-o max overshoot= 50.3%
-o closed loop stability- stable.
+- After a couple of iterations, the following parameters were obtained for the controller and the system.
+k<sub>p</sub>=9.007 K<sub>d</sub>= 1.88 which is almost exactly the same as the calculation
+- Gain margin= 13.3 dB and phase margin= 25 deg
+- max overshoot= 50.3%
+-closed loop stability- stable.
 ❖ Therefore, substituting the values for Kp and Kd 
-o Answer: Controller= 9 + 1.88S
+- **Answer: Controller= 9 + 1.88S**
 ## Calculating the static error constants
 ① The static position error constant Kp is defined by:
- Kp = 𝒍𝒊𝒎𝒔→𝟎𝑮(𝒔) = 𝑮(𝟎)
+$$Kp = lim_{{s \to 0}} G(s) = G(0)$$
 𝐺(𝑠) = 𝐺𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑑(𝑠) = 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1) ,this implies that 
 kp= lim_{s \to 0}9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1)
 ② The static velocity error constant Kv is defined by:
