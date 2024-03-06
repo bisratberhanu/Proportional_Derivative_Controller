@@ -7,7 +7,9 @@ used in control systems. It combines proportional and derivative control actions
 improve the system's response and stability. The PD controller calculates the control 
 signal based on the error between the desired setpoint and the actual output, as 
 well as the rate of change of the error.
-o 𝑢(𝑡) = 𝐾𝑝𝑒(𝑡) + 𝐾d 𝑑𝑒(𝑡)/dt
+ 
+- 𝑢(𝑡) = 𝐾<sub>p</sub>(𝑡) + 𝐾<sub>d</sub> 𝑑𝑒(𝑡)/dt
+
 
 
 
@@ -21,7 +23,8 @@ controller values, and simulate the overall system using SIMULINK.
 # Given Problem 
 The forward-path transfer function of a system is 
 G(s)H(s) = 1 / (2s + 1) (s + 1) (0.5s + 1) 
-(a) Design a P D controller such that the KP = 9, and the phase margin is greater than 25◦.
+
+(a) Design a PD controller such that the KP = 9, and the phase margin is greater than 25◦.
  
  (b) Determine the static error constants and the corresponding steady state errors of the 
 compensated system. 
@@ -30,18 +33,18 @@ compensated system.
 for this system.
 
 
-3, Design procedure
+# Design procedure
 ## Finding Kd
 - A PD controller can be represented as 
  C= Kp + Kd S ……. where Kp is the proportional constant and kd is the derivative constant
   
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png) 
+![![alt text](Images\image.png)](../Images/image.png)
+![![alt text](Images\image-1.png)](../Images/image-1.png)
+![![alt text](Images\image-2.png)](../Images/image-2\.png)
+![![alt text](Images\image-3.png)](../Images/image-3.png)
 
-# Or 
+## Or 
 • Using the MATLAB built-in tool pidtool, a PID controller can be simulated to fulfil a 
 corresponding criterion. In this case a phase margin of 25 degree and KP fixed at 9.
 • After a couple of iterations, the following parameters were obtained for the 
@@ -75,23 +78,23 @@ Kv = lim_{s \to 0} s* 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1) = 0
 
 ## Calculating the range of the possible values of a proportional controller 
 
-![alt text](image-4.png)
+![![alt text](Images\image-4.png)](../Images/image-4.png)
 ## MATLAB Plots and Interpretations
 The impulse, step and ramp response of the compensated and uncompensated closed loop 
 system is presented below using MATLAB.
 Impulse response without controller
-![alt text](image-5.png)
-![alt text](image-6.png)
-![alt text](image-7.png)
-![alt text](image-8.png)
+![![alt text](Images\image-5.png)](../Images/image-5.png)
+![![alt text](Images\image-6.png)](../Images/image-6.png)
+![![alt text](Images\image-7.png)](../Images/image-7.png)
+![![alt text](Images\image-8.png)](../Images/image-8.png)
 ## INTERPRETATION
 - From the impulse and step response of the compensated and uncompensated system we 
 can conclude that:
 - the uncompensated system is critically damped.
 - the maximum overshot and the settling time are higher in the compensated system.
 - the maximum overshoot and the settling time can be seen as the tradeoff for higher gain margin.
-![alt text](image-9.png)
-![alt text](image-10.png)
+![![alt text](Images\image-9.png)](../Images/image-9.png)
+![![alt text](Images\image-10.png)](../Images/image-10.png)
 ## Bode Plot Representation
 - The Bode plot the corresponding margins can be drawn using the MATLAB function
 Margin on the open loop transfer function of the system. 
@@ -99,9 +102,9 @@ Margin on the open loop transfer function of the system.
 Uncompensated system has a phase margin of -180 deg at 0 rad/s. this phase margin 
 implies that we have no margin to add, in fact a simple addition of any phase will 
 make the system unstable.
-![alt text](image-11.png)
-![alt text](image-12.png)
-![alt text](image-13.png)
+![![alt text](Images\image-11.png)](../Images/image-11.png)
+![![alt text](Images\image-12.png)](../Images/image-12.png)
+![![alt text](Images\image-13.png)](../Images/image-13.png)
 
 ## Conclusion
 - The PD controller was successfully designed to meet the specifications of KP = 9 and a 
