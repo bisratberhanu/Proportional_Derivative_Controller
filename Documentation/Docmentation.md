@@ -60,18 +60,20 @@ k<sub>p</sub>=9.007 K<sub>d</sub>= 1.88 which is almost exactly the same as the 
 ## Calculating the static error constants
 ① The static position error constant Kp is defined by:
 $$Kp = lim_{{s \to 0}} G(s) = G(0)$$
-𝐺(𝑠) = 𝐺𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑑(𝑠) = 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1) ,this implies that 
-kp= lim_{s \to 0}9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1)
-② The static velocity error constant Kv is defined by:
- Kv = 𝒔 ∗ lim_{s \to 0}
 
- 𝐺(𝑠) = 𝐺𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑑(𝑠) = 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1)
+$$𝐺(𝑠) = 𝐺𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑟(𝑠) = \frac{{9+1.9s}}{{𝑠^3 + \frac{7}{2}𝑠^2+ \frac{7}{2}s +1}}$$
+this implies that 
+$$kp= lim_{s \to 0}\frac{{9+1.9s}}{{𝑠^3 + \frac{7}{2}𝑠^2+ \frac{7}{2}s +1}}$$
+② The static velocity error constant Kv is defined by:
+ $$Kv = 𝒔 ∗ lim_{s \to 0}$$
+
+  $$𝐺𝑐𝑜𝑛𝑡𝑟𝑜𝑙𝑙𝑒𝑑(𝑠) = \frac{{9+1.9s}}{{𝑠^3 + \frac{7}{2}𝑠^2+ \frac{7}{2}s +1}}$$
 
 ,this implies that 
-Kv = lim_{s \to 0} s* 9+1.9*s/(𝑠^3 + (7/2) 𝑠^2 + (7/2)s +1) = 0
+$$Kv = lim_{s \to 0} s* \frac{{9+1.9s}}{{𝑠^3 + \frac{7}{2}𝑠^2+ \frac{7}{2}s +1}} = 0$$
 
 - The static acceleration error constant Ka is defined by:
- Ka = 𝒔^𝟐 ∗ lim_{s \to 0} G(s)= 0
+ $$Ka = 𝒔^𝟐 ∗ lim_{s \to 0} G(s)= 0$$
 
 
 
