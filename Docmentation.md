@@ -22,7 +22,7 @@ controller values, and simulate the overall system using SIMULINK.
 
 # Given Problem 
 The forward-path transfer function of a system is 
-G(s)H(s) = 1 / (2s + 1) (s + 1) (0.5s + 1) 
+G(s)H(s) = $$\frac{1}{{(2s + 1)(s + 1)(0.5s + 1)}}$$ 
 
 (a) Design a PD controller such that the KP = 9, and the phase margin is greater than 25◦.
  
